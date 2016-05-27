@@ -178,8 +178,10 @@
                 <div class="row">
                     <div class="col-md-12" ng-controller="ChartCtrl">
                         <h1 id="about" class="title text-center">About <span>{{name}}</span></h1>
-
-
+                        <h2>Alla indikatorer <span class="badge">{{measures.length}}</span></h2>
+                        <ol>
+                            <li ng-repeat="m in measures | orderBy: 'title'">{{m.parentMeasureDefinition.title}}</li>
+                        </ol>
                         <div class="app">
                             <h1>Hej Love!</h1>
                             <div id="deviceready" class="blink">

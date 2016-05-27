@@ -42,6 +42,6 @@ var app = {
         console.log('Received Event: ' + id);
     }
 },
-    tillganglig = angular.module('tillganglig', ['tillganglig.chart']);
+    tillganglig = angular.module('tillganglig', ['tillganglig.chart', 'restangular']);
 
 app.initialize();
